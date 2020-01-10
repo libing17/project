@@ -5,10 +5,21 @@ void sub(float,float);
 int main()
 {float a,b,c;
 float  d;
+int x;
+printf("choose\n1.add\n2.subtract\n");
+scanf("%d",&x);
     printf("enter the values\n");
     scanf("%f %f",&a,&b);
-    add(a,b);
-    sub(a,b);
+    switch(x)
+    {case 1: add(a,b);
+              break;
+     case 2:  sub(a,b);
+              break;
+      default:printf("invalid choice\n");
+              break;
+                     }
+   
+   
    return 0;
 }
 void add(float a,float b)
