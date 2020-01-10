@@ -3,8 +3,7 @@
 void add(float,float);
 void sub(float,float);
 int main()
-{float a,b,c;
-float  d;
+{float a,b;
 int x;
 printf("choose\n1.add\n2.subtract\n");
 scanf("%d",&x);
